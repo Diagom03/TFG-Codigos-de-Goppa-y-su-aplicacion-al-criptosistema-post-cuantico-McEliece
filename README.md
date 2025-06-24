@@ -26,8 +26,8 @@ El repositorio se compone de un total de 13 archivos .py:
 - Bibliotecas utilizadas: 'random', 'sympy'
 
 ## Ejecución
-La implementación de las operaciones de cuerpos finitos, anillos de polinomios y matrices con elementos en cuerpos finitos culmina en los archivos
-goppa.py y mceliece.py, donde están definidas las funciones pertinentes a la generación y decodificación de códigos de Goppa arbitrarios según lo expuesto en la memoria del TFG, así como las funciones necesarias para definir correctamente el criptosistema de McEliece, respectivamente. 
+La implementación de las operaciones de cuerpos finitos, anillos de polinomios y matrices con elementos en cuerpos finitos es necesaria para poder ejecutar los archivos
+goppa.py y mceliece.py, donde están definidas las funciones pertinentes a la generación y decodificación de códigos de Goppa arbitrarios según lo expuesto en la memoria del TFG, así como las funciones necesarias para definir correctamente el criptosistema de McEliece, respectivamente.
 
 Se pueden probar las funciones anteriores en los archivos 'ejemplo_decodificacion_goppa_tfg.py', 'ejemplo_mceliece_tfg.py' y 'ejemplo_mceliece_parametros_originales.py'. 
 
