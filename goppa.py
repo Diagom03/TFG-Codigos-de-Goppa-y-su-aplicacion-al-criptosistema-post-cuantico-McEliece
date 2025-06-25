@@ -8,6 +8,7 @@ Contiene las siguientes funciones:
     mat_h_stan(g,a,p,f,h)
     mat_g_can(g,a,p,f,h)
     sindrome(r,a,g,p,f,h)
+    encode(m,G,p,f)
     decode(r,a,g,k,p,f,h)
 
 Funciones auxiliares: 
@@ -299,6 +300,34 @@ def sindrome(r,a,g,p,f,h):
         sind = f_q_m_pol.suma(sind, sumando, p, f, h)
 
     return(sind)
+
+
+def encode(m,G,p,f):
+    '''
+    Parameters
+    ----------
+    m : LIST
+        Vector columna de tamaño k de elementos del cuerpo Fq que representa un mensaje
+        que se quiere transmitir
+    G : LIST
+        Lista de listas de listas que representa una matriz, definida por filas,
+        cuyos elementos pertenecen al cuerpo Fq. Es una matriz generadora de un 
+        código de Goppa C
+    p : INT
+        número primo >= 2
+    f : LIST
+        polinomio de grado n >= 1 irreducible, mónico, con coeficientes en
+        el cuerpo Z/pZ
+
+    Returns
+    -------
+    r, vector columna de tamaño l de elementos del cuerpo Fq que representa la palabra
+    m codificada para pertenecer al código de Goppa C de matriz generadora G
+    '''
+    m_mat = mat_f_q.vect_a_mat(m)
+    m1 = mat_f_q.mult_mat(G,m_mat,p,f)
+    r = mat_f_q.mat_a_vect(m1)
+    return(r)
 
 
 def decode(r,a,g,k,p,f,h):
