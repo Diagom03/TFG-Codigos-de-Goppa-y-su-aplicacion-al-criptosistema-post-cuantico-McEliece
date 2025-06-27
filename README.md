@@ -1,4 +1,4 @@
-# TFG-Codigos-de-Goppa-y-McEliece
+# TFG-Codigos-de-Goppa-y-su-aplicacion-al-criptosistema-post-cuantico-McEliece
 
 # Objetivo del TFG y repositorio
 Este repositorio contiene el código desarrollado para el Trabajo de Fin de Grado (TFG) en Ingeniería Matemática 'Códigos de Goppa y su aplicación al criptosistema post-cuántico McEliece'.
